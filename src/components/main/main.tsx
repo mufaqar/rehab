@@ -10,7 +10,7 @@ function main() {
         }}>
         <div className='container mx-auto px-4 mt-10'>
           <div className='text-white border border-none md:w-[560px]  md:mt-10'>
-            <h1 className='text-5xl md:text-7xl py-4 font-semibold leading-tight md:leading-[13vh] '>
+            <h1 className='text-5xl md:text-7xl py-4 font-semibold leading-tight md:leading-[13vh] axiformaBold '>
               Integrated Physio Care
             </h1>
             <p className='text-lg md:text-2xl pb-10 md:w-96  '>
