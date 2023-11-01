@@ -1,10 +1,25 @@
-import Image from 'next/image'
-
+import React from 'react'
+import Navbar from '@/components/navbar'
+import Main from '@/components/main/main'
+import Degree from '@/components/degree/degree'
+import Offer from '@/components/offer/offer'
+import Innovation from '@/components/innovation/innovation'
+import Testimonials from '@/components/testimonials/testimonials'
+import News from '@/components/news/news'
+import Blog from '@/components/blog/blog'
+import Footer from '@/components/footer/footer'
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-evenly p-24 bg-white">
-      <Image src="/images/logo.svg" alt="Rehab Fit" width={450} height={650} />
-      <Image src="/coming.jpg" alt="Coming Soon" width={624} height={312} />
+    <main>
+      <Navbar/>
+      <Main/>
+      <Degree/>
+      <Offer/>
+      <Innovation/>
+      <Testimonials/>
+      <News/>
+      <Blog/>
+      <Footer/>
     </main>
   )
 }
