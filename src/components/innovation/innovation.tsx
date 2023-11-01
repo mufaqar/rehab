@@ -20,7 +20,7 @@ function innovation() {
           <Image src="/images/1.png" alt="Rehab Fit" width={450} height={650} className='' />
        </Link>
        <Link href="/">
-          <Image src="/images/Group.png" alt="Rehab Fit" width={450} height={650} className=' mt-4' />
+          <Image src="/images/1.png" alt="Rehab Fit" width={450} height={650} className=' mt-4' />
        </Link>
        </div>
       </div>
