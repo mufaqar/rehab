@@ -21,7 +21,7 @@ function Footer() {
             Pain and Disability Management Council is an advanced rehabilitation clinic that creates a customized treatment plan to meet each patient’s unique medical needs including adults and children.
           </p>
           <div className='flex gap-4 text-[#0E9CD9] mt-3'>
-          <Link href='/'>
+          <Link href='https://facebook.com' target='_blank'>
             <FaFacebook className='text-2xl text-[#0E9CD9]'/>
           </Link>
           <Link href='/'>
@@ -100,7 +100,7 @@ function Footer() {
                 
                </div>
                <div className='py-4'>
-               <Link href='/' className='flex gap-3'>
+               <Link href='tel:0923055862457' className='flex gap-3'>
                    <BsFillTelephoneFill className='text-2xl text-[#0E9CD9]'/>
                    <div>
                      <h4 className='font-bold'>Phone</h4>
