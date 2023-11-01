@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import { BsArrowRight } from 'react-icons/bs'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,21 +14,21 @@ function Navbar() {
   return (
     <nav className="">
       <div className="container mx-auto flex items-center justify-between py-5 px-4">
-        <div>
+        <div className='md:w-1/5'>
           <Link href="/">
-          <Image src="/images/logo.svg" alt="Rehab Fit" width={450} height={650} className='w-52' />
+            <Image src="/images/logo.svg" alt="Rehab Fit" width={280} height={56} className='md:w-auto w-56' />
           </Link>
         </div>
-        <div className="hidden md:flex items-center space-x-6">
-          <Link href="/" className=" font-semibold">Home</Link>
-          <Link href="/" className="font-semibold">About Us</Link>
-          <Link href="/" className="font-semibold">Our Offerings</Link>
-          <Link href="/" className="text-[#0B577E] font-semibold flex items-center">
-          <Image src="/images/whatapp.svg" alt="Rehab Fit" width={450} height={650} className='w-7' />
+        <div className="md:w-4/5 hidden md:flex items-center justify-end gap-8">
+          <Link href="/" className="font-semibold text-lg axiformaRegular hover:text-[#0E9CD9]">Home</Link>
+          <Link href="/" className="font-semibold text-lg axiformaRegular hover:text-[#0E9CD9]">About Us</Link>
+          <Link href="/" className="font-semibold text-lg axiformaRegular hover:text-[#0E9CD9]">Our Offerings</Link>
+          <Link href="/" className="text-[#0B577E] hover:text-[#0E9CD9] font-semibold AxiformaMedium flex items-center gap-1.5 hover:opacity-60">
+            <Image src="/images/whatapp.svg" alt="Rehab Fit" width={40} height={40} className='' />
             +92 320 3588468
-            </Link>
-          <Link href="/" className="bg-[#0E9CD9]  px-4 py-2 rounded-md text-white text-[18px]">
-          Consult now
+          </Link>
+          <Link href="/" className="bg-[#0E9CD9] hover:bg-[#0B577E] px-4 py-3.5 rounded-[10px] rounded-br-[20px] text-white text-lg flex items-center gap-2 justify-center md:w-[198px]">
+            Consult now <BsArrowRight />
           </Link>
         </div>
         <div className="md:hidden flex items-center">
@@ -39,16 +40,16 @@ function Navbar() {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden bg-white w-full absolute top-14 left-0 right-0  py-10 px-4">
-          <Link href="/#products" className="block py-2 hover:opacity-70">Home</Link>
-          <Link href="/#industries" className="block py-2 hover:opacity-70">About Us</Link>
-          <Link href="load-market" className="block  py-2 hover:opacity-70 pb-6">Our Offerings</Link>
-          <Link href="/load-market" className="after:text-[#0B577E] py-2 font-semibold flex items-center">
-          <Image src="/images/whatapp.svg" alt="Rehab Fit" width={450} height={650} className='w-7' />
+        <div className="md:hidden bg-white w-full absolute top-14 left-0 right-0 py-10 px-4 grid gap-3">
+          <Link href="/#products" className="hover:opacity-70 text-lg axiformaRegular hover:text-[#0E9CD9]">Home</Link>
+          <Link href="/#industries" className="hover:opacity-70 text-lg axiformaRegular hover:text-[#0E9CD9]">About Us</Link>
+          <Link href="load-market" className="hover:opacity-70 text-lg axiformaRegular hover:text-[#0E9CD9]">Our Offerings</Link>
+          <Link href="/load-market" className="text-[#0B577E] font-semibold AxiformaMedium flex items-center gap-1.5">
+            <Image src="/images/whatapp.svg" alt="Rehab Fit" width={450} height={650} className='w-7' />
             +92 320 3588468
           </Link>
-          <Link href="/contact-us" className="bg-[#0E9CD9] px-4 py-2 mt-4 rounded-md text-white text-[18px]">
-          Consult now
+          <Link href="/" className="bg-[#0E9CD9] hover:bg-[#0B577E] px-4 py-3.5 rounded-[10px] rounded-br-[20px] text-white text-lg flex items-center gap-2 justify-center md:w-[198px] mt-3">
+            Consult now <BsArrowRight />
           </Link>
         </div>
       )}
