@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Navbar from '@/components/navbar'
 import Main from '@/components/main/main'
@@ -13,16 +14,16 @@ import Videos from '@/components/video/videos'
 export default function Home() {
   return (
     <main>
-      <Navbar/>
-      <Main/>
-      <Degree/>
-      <Offer/>
-      <Innovation/>
-      <Testimonials/>
-      <News/>
+      <Navbar />
+      <Main />
+      <Degree />
+      <Offer />
+      <Innovation />
+      <Testimonials />
+      <News />
       <Videos />
-      <Blog/>
-      <Footer/>
+      <Blog />
+      <Footer />
     </main>
   )
 }
