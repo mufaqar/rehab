@@ -30,15 +30,16 @@ function Offer() {
     <div className='bg-[#0B577E] h-auto text-white py-14 mt-20'>
       <div className='container mx-auto px-4'>
          <div className=' text-center'>
-            <h2 className='lg:text-[72px] md:text-[60px] text-[30px] font-semibold'>What We Offer</h2>
-            <p className='text-lg lg:text-xl xl:text-2xl lg:w-[70%] xl:w-[90%] mx-auto'>
+            <h2 className='lg:text-[72px] md:text-[60px] text-[30px] font-semibold axiformaRegular'>What We Offer</h2>
+            <p className='text-lg lg:text-xl xl:text-2xl axiformaRegular lg:w-[70%] xl:w-[90%] mx-auto'>
               We Offer Physiotherapy Treatments Across Neuro Ortho Chiro Pediatrics Geriatrics Sports Related Issues Covering A Wide Range Of Conditions and Symptoms
             </p>
          </div>
          <div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-5 gap-4'>
             {offerings.map((item) => (
-              <div key={item.id} className='border border-[#0E9CD9] text-center py-3 rounded-tr-xl rounded-bl-xl'>
-                <Link href="/#products" className="font-semibold">{item.title}</Link>
+              <div key={item.id} className='border border-[#0E9CD9] text-center p-3 rounded-tl-[5px] rounded-tr-[20px] rounded-br-[5px] rounded-bl-[20px] flex items-center gap-3'>
+                <div className='w-12 h-12 bg-[#0E9CD9] rounded-tr-[12px] rounded-bl-[12px]'></div>
+                <Link href="/#products" className="font-semibold axiformaRegular">{item.title}</Link>
               </div>
             ))}
          </div>

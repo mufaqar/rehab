@@ -8,6 +8,8 @@ import Testimonials from '@/components/testimonials/testimonials'
 import News from '@/components/news/news'
 import Blog from '@/components/blog/blog'
 import Footer from '@/components/footer/footer'
+import Videos from '@/components/video/videos'
+
 export default function Home() {
   return (
     <main>
@@ -18,6 +20,7 @@ export default function Home() {
       <Innovation/>
       <Testimonials/>
       <News/>
+      <Videos />
       <Blog/>
       <Footer/>
     </main>
