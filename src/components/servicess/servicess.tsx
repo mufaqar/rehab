@@ -105,7 +105,7 @@ function Servicess() {
             <div key={service.id} className='text-center'>
               <Image src={service.image} alt='Rehab Fit' width={450} height={650} className='mx-auto w-96' />
               <Link href='/'>
-                <h3 className='py-4 text-[24px] text-[#363853] font-semibold'>{service.title}</h3>
+                <h3 className='py-4 text-2xl text-[#363853] font-semibold axiformaRegular'>{service.title}</h3>
               </Link>
             </div>
           ))}
