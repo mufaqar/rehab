@@ -36,41 +36,41 @@ const Video = [
     {
         url: "#",
         title: 'World cancer awareness',
-        img: "/images/video/1.PNG",
+        img: "/images/video/1.png",
     },
     {
         url: "#",
         title: 'Say Goodbye to Vertigo: Epley Maneuver Explained',
-        img: "/images/video/2.PNG",
+        img: "/images/video/2.png",
     },
     {
         url: "#",
         title: 'Free physical therapy and medical camp',
-        img: "/images/video/3.PNG",
+        img: "/images/video/3.png",
     },
     {
         url: "#",
         title: 'All about Misconceptions and Myths Regarding Physiotherapy Treatment',
-        img: "/images/video/4.PNG",
+        img: "/images/video/4.png",
     },
     {
         url: "#",
         title: "Dr. Darkhshan Nausheen's Epic Tribute to Young PTs",
-        img: "/images/video/5.PNG",
+        img: "/images/video/5.png",
     },
     {
         url: "#",
         title: 'How about "Real Patients, Real Stories: Inspiring Reviews',
-        img: "/images/video/6.PNG",
+        img: "/images/video/6.png",
     },
     {
         url: "#",
         title: 'Review of therapeutic ultrasound |CSL-6 |Dr Darkhshan Nausheen',
-        img: "/images/video/7.PNG",
+        img: "/images/video/7.png",
     },
     {
         url: "#",
         title: 'Pt reviews :successful recovery :after multiple fractures',
-        img: "/images/video/8.PNG",
+        img: "/images/video/8.png",
     },
 ];
