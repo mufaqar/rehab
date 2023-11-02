@@ -51,43 +51,43 @@ export default Videos
 
 const Video = [
     {
-        videoLink: "yAoLSRbwxL8",
-        title: 'World cancer awareness',
+        videoLink: "f6SxoHq-o6k",
+        title: 'Lahore poly clinic',
         img: "/images/video/1.png",
     },
     {
-        videoLink: "yAoLSRbwxL8",
-        title: 'Say Goodbye to Vertigo: Epley Maneuver Explained',
+        videoLink: "TToA7QWyiGg",
+        title: 'Inspiring Reviews from Those Who Found Hope',
         img: "/images/video/2.png",
     },
     {
-        videoLink: "yAoLSRbwxL8",
-        title: 'Free physical therapy and medical camp',
+        videoLink: "9mGQ_Vlvi4A",
+        title: 'Mera Sunday as physiotherapist',
         img: "/images/video/3.png",
     },
     {
-        videoLink: "yAoLSRbwxL8",
-        title: 'All about Misconceptions and Myths Regarding Physiotherapy Treatment',
+        videoLink: "hBPBBaAJLI4",
+        title: 'Embrace Exercise and Yoga Outdoors!',
         img: "/images/video/4.png",
     },
     {
-        videoLink: "yAoLSRbwxL8",
-        title: "Dr. Darkhshan Nausheen's Epic Tribute to Young PTs",
+        videoLink: "cLj0gqNBjmQ",
+        title: "Walking vs Cycling",
         img: "/images/video/5.png",
     },
     {
-        videoLink: "yAoLSRbwxL8",
-        title: 'How about "Real Patients, Real Stories: Inspiring Reviews',
+        videoLink: "kHuFr18kqVs",
+        title: 'Basics about knee joint pain series',
         img: "/images/video/6.png",
     },
     {
-        videoLink: "yAoLSRbwxL8",
-        title: 'Review of therapeutic ultrasound |CSL-6 |Dr Darkhshan Nausheen',
+        videoLink: "4xG2OqUDfjs",
+        title: 'Celebrating World Physical Therapy Day',
         img: "/images/video/7.png",
     },
     {
-        videoLink: "yAoLSRbwxL8",
-        title: 'Pt reviews :successful recovery :after multiple fractures',
+        videoLink: "OAxXbEooycw",
+        title: "Dr. Darkhshan Nausheen's Epic Tribute to Young PTs",
         img: "/images/video/8.png",
     },
 ];
