@@ -42,44 +42,44 @@ function Footer() {
           <div className=' lg:ml-14'>
             <ul className='text-sm grid gap-2 md:gap-4'>
               <li>
-                <Link href='/#products' className='hover:text-[#0E9CD9] hover:underline'>Neck Pain</Link>
+                <Link href='#' className='hover:text-[#0E9CD9] hover:underline'>Neck Pain</Link>
               </li>
               <li>
-                <Link href='/#products' className='hover:text-[#0E9CD9] hover:underline'>Shoulder Pain</Link>
+                <Link href='#' className='hover:text-[#0E9CD9] hover:underline'>Shoulder Pain</Link>
               </li>
               <li>
-                <Link href='/#products' className='hover:text-[#0E9CD9] hover:underline'>Back Pain</Link>
+                <Link href='#' className='hover:text-[#0E9CD9] hover:underline'>Back Pain</Link>
               </li>
               <li>
-                <Link href='/#products' className='hover:text-[#0E9CD9] hover:underline'>Knee Pain</Link>
+                <Link href='#' className='hover:text-[#0E9CD9] hover:underline'>Knee Pain</Link>
               </li>
               <li>
-                <Link href='/#products' className='hover:text-[#0E9CD9] hover:underline'>Foot Pain</Link>
+                <Link href='#' className='hover:text-[#0E9CD9] hover:underline'>Foot Pain</Link>
               </li>
               <li>
-                <Link href='/#products' className='hover:text-[#0E9CD9] hover:underline'>Elbow Pain</Link>
+                <Link href='#' className='hover:text-[#0E9CD9] hover:underline'>Elbow Pain</Link>
               </li>
             </ul>
           </div>
           <div className=' md:mt-0'>
             <ul className='text-sm  grid gap-2 md:gap-4'>
               <li>
-                <Link href='/#products' className='hover:text-[#0E9CD9] hover:underline'>Physiotherapy</Link>
+                <Link href='#' className='hover:text-[#0E9CD9] hover:underline'>Physiotherapy</Link>
               </li>
               <li>
-                <Link href='/#products' className='hover:text-[#0E9CD9] hover:underline'>Orthopedic</Link>
+                <Link href='#' className='hover:text-[#0E9CD9] hover:underline'>Orthopedic</Link>
               </li>
               <li>
-                <Link href='/#products' className='hover:text-[#0E9CD9] hover:underline'>Orthosis Prosthesis</Link>
+                <Link href='#' className='hover:text-[#0E9CD9] hover:underline'>Orthosis Prosthesis</Link>
               </li>
               <li>
-                <Link href='/#products' className='hover:text-[#0E9CD9] hover:underline'>Neurology</Link>
+                <Link href='#' className='hover:text-[#0E9CD9] hover:underline'>Neurology</Link>
               </li>
               <li>
-                <Link href='/#products' className='hover:text-[#0E9CD9] hover:underline'>Pediatric</Link>
+                <Link href='#' className='hover:text-[#0E9CD9] hover:underline'>Pediatric</Link>
               </li>
               <li>
-                <Link href='/#products' className='hover:text-[#0E9CD9] hover:underline'>Speech Therapy</Link>
+                <Link href='#' className='hover:text-[#0E9CD9] hover:underline'>Speech Therapy</Link>
               </li>
             </ul>
           </div>
