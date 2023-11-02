@@ -10,23 +10,23 @@ function meet() {
         </div>
         <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 py-10 gap-5 mx-auto'>
             <div className='border border-none '>
-            <Image src="/images/Mask Group.png" alt="Rehab Fit" width={450} height={650} className=' mx-auto w-96 h-72 ' />
+            <Image src="/images/Mask.png" alt="Rehab Fit" width={300} height={350} className='mx-auto' />
             <div className='text-center mt-6'>
-            <h4 className='text-[30px] font-semibold'>Dr Darkhshan Nausheen</h4>
+            <h4 className='text-2xl font-semibold'>Dr Darkhshan Nausheen</h4>
             <p>Specialist in Physiotherapist</p>
             </div>
             </div>
             <div className='border border-none '>
-            <Image src="/images/Mask Group.png" alt="Rehab Fit" width={450} height={650} className=' mx-auto w-96 h-72 ' />
+            <Image src="/images/Mask.png" alt="Rehab Fit" width={300} height={350} className='mx-auto' />
             <div className='text-center mt-6'>
-            <h4 className='text-[30px] font-semibold'>Dr Darkhshan Nausheen</h4>
+            <h4 className='text-2xl font-semibold'>Dr Darkhshan Nausheen</h4>
             <p>Specialist in Physiotherapist</p>
             </div>
             </div>
             <div className='border border-none '>
-            <Image src="/images/Mask Group.png" alt="Rehab Fit" width={450} height={650} className=' mx-auto w-96 h-72 ' />
+            <Image src="/images/Mask.png" alt="Rehab Fit" width={300} height={350} className='mx-auto' />
             <div className='text-center mt-6'>
-            <h4 className='text-[30px] font-semibold'>Dr Darkhshan Nausheen</h4>
+            <h4 className='text-2xl font-semibold'>Dr Darkhshan Nausheen</h4>
             <p>Specialist in Physiotherapist</p>
             </div>
             </div>
