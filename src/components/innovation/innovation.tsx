@@ -12,7 +12,7 @@ function innovation() {
           <h2 className='lg:text-[48px] text-xl lg:leading-[64px] font-semibold text-[#363853] '>Innovation, Integration, Accessibility</h2>
           <p className='text-[#363853] py-4 pb-6 max-w-[456px]'>Welcome to Rehab Fit by Physio Connect largest Integrative and most accessible rehabilitation provider. Our clinicians pride themselves ensuring the highest quality of care is accessible to every member . With our Innovative, Integrative, Accessible Rehabilitative care, you can rest assured that you will recover as quickly as possible with evidence-based gold standard treatment.</p>
           <div>
-            <Link href="/" className="bg-[#0E9CD9] hover:bg-[#0B577E] px-4 py-3.5 rounded-[10px] rounded-br-[20px] text-white text-lg flex items-center gap-2 justify-center md:w-[198px]">
+            <Link href="/contact" className="bg-[#0E9CD9] hover:bg-[#0B577E] px-4 py-3.5 rounded-[10px] rounded-br-[20px] text-white text-lg flex items-center gap-2 justify-center md:w-[198px]">
               Consult now <BsArrowRight />
             </Link>
           </div>

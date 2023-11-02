@@ -20,7 +20,7 @@ function Blog() {
                 Book Now with an Expert Physiotherapist
               </p>
               <div>
-                <Link href="/" className="bg-white hover:bg-[#0B577E] px-4 py-3.5 rounded-[10px] rounded-br-[20px] text-[#0E9CD9] hover:text-white text-lg flex items-center gap-2 justify-center md:w-[198px] mx-auto">
+                <Link href="/contact" className="bg-white hover:bg-[#0B577E] px-4 py-3.5 rounded-[10px] rounded-br-[20px] text-[#0E9CD9] hover:text-white text-lg flex items-center gap-2 justify-center md:w-[198px] mx-auto">
                   Consult now <BsArrowRight />
                 </Link>
               </div>
