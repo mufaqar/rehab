@@ -13,7 +13,7 @@ function Videos() {
                 </div>
                 <div className='grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mt-5 gap-4'>
                     {Video.map((item, idx) => (
-                        <div key={idx} >
+                        <div key={idx}>
                             <div className='relative'>
                                 <Image src={item?.img} alt="featured" width={436} height={313} />
                                 <Image src="/images/video/play.svg" alt="Rehab Fit" width={90} height={90} className='absolute inset-y-1/2 inset-x-1/2 -translate-y-1/2 -translate-x-1/2 rounded-full' />

@@ -8,9 +8,10 @@ import { AiFillLinkedin } from 'react-icons/ai'
 import { BsTwitter } from 'react-icons/bs'
 import { HiLocationMarker } from 'react-icons/hi'
 import { BsFillTelephoneFill } from 'react-icons/bs'
+
 function Footer() {
   return (
-    <>
+    <footer>
       <div className='container mx-auto px-4 mt-10'>
         <div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 '>
           <div>
@@ -36,10 +37,8 @@ function Footer() {
               <Link href='/'>
                 <BsTwitter className='text-2xl text-[#0E9CD9] hover:text-[#0B577E]' />
               </Link>
-
             </div>
           </div>
-
           <div className=' lg:ml-14'>
             <ul className='text-sm grid gap-2 md:gap-4'>
               <li>
@@ -62,7 +61,6 @@ function Footer() {
               </li>
             </ul>
           </div>
-
           <div className=' md:mt-0'>
             <ul className='text-sm  grid gap-2 md:gap-4'>
               <li>
@@ -85,7 +83,6 @@ function Footer() {
               </li>
             </ul>
           </div>
-
           <div>
             <div>
               <Link href='/' className='flex gap-3 hover:text-[#0E9CD9] hover:underline'>
@@ -117,8 +114,7 @@ function Footer() {
         <p>Rehabfit 2024 ©, All rights reserved.</p>
         <p> <Link href="#"> Sitemap </Link> - <Link href="#"> Terms & Conditions</Link> - <Link href="#"> Privacy Policy </Link></p>
       </div>
-
-    </>
+    </footer>
   )
 }
 
