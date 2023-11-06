@@ -4,25 +4,45 @@ import { FaLocationArrow } from 'react-icons/fa'
 import { GrMail } from 'react-icons/gr'
 import Link from 'next/link';
 import { useFormik } from "formik";
+import { useForm, SubmitHandler } from "react-hook-form";
 import { contactform } from '@/schemas/contactform';
 
-const initialValues = {
-  name: '',
-  phone: '',
-  services: '',
-  time: '',
-  message: '',
-}
+// const initialValues = {
+//   name: '',
+//   phone: '',
+//   services: '',
+//   email: '',
+//   message: '',
+// }
 function Main() {
-  const { values, errors, touched, handleBlur, handleChange, handleSubmit } = useFormik({
-    initialValues,
-    validationSchema: contactform,
-    onSubmit: (values: any, action) => {
-       console.log(values)
-     // alert("message send successfully");
-      action.resetForm();
-    }
-  })
+  const {
+    register,
+    handleSubmit,
+    watch,
+    reset,
+    formState: { errors },
+  } = useForm<any>()
+  const [sending, setSending] = useState(false)
+
+  const onSubmit: SubmitHandler<any> = (data: any) => {
+    setSending(true)
+    fetch('/api/contactform', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json, text/plain, */*',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    }).then((res) => {
+      console.log('Response received');
+      if (res.status === 200) {
+        console.log('Response succeeded!');
+        alert('Message Successfully send.!');
+        reset();
+        setSending(false)
+      }
+    });
+  }
   return (
     <div className='bg-[#F3F9FD] w-full h-auto py-14'>
       <div className='container mx-auto px-4'>
@@ -52,24 +72,30 @@ function Main() {
             <div>
               <h3 className='md:text-[32px] text-2xl font-bold text-center axiformaRegular pb-5'>Contact with Us</h3>
             </div>
-            <form className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-5' onSubmit={handleSubmit}>
+            <form className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-5' onSubmit={handleSubmit(onSubmit)}>
               <div className='w-full'>
                 <label htmlFor='name' className='px-4 py-1 axiformaRegular'>
                   Name
                 </label>
                 <input
                   type='text'
-                  name='name'
                   id='name'
                   placeholder='Your Name'
                   className='border border-[#D8D8D8] rounded-[5px] rounded-tl-[20px] rounded-br-[20px] px-5 py-2 outline-none w-full'
-                  value={values.name}
-                  onChange={handleChange}
-                  onBlur={handleBlur}
+                  {...register("name", { required: true })}
                 />
-                {touched.name && errors.name ? (
-                  <div className='text-red-500'>{errors.name}</div>
-                ) : null}
+                {errors.name && <span className='text-xs text-red-500'>This field is required</span>}
+              </div>
+              <div className='w-full'>
+                <label className='px-4 py-1 axiformaRegular'>Email</label>
+                <input
+                  type='email'
+                  id='email'
+                  placeholder='Email'
+                  className='border border-[#D8D8D8] rounded-[5px] rounded-tl-[20px] rounded-br-[20px] outline-none px-5 py-2 w-full'
+                  {...register("email", { required: true })}
+                />
+                {errors.email && <span className='text-xs text-red-500'>This field is required</span>}
               </div>
               <div className='w-full'>
                 <label htmlFor='phone' className='px-4 py-1 axiformaRegular'>
@@ -77,29 +103,21 @@ function Main() {
                 </label>
                 <input
                   type='tel'
-                  name='phone'
                   id='phone'
                   placeholder='Your Phone'
                   className='border border-[#D8D8D8] rounded-[5px] rounded-tl-[20px] rounded-br-[20px] px-5 py-2 outline-none w-full'
-                  value={values.phone}
-                  onChange={handleChange}
-                  onBlur={handleBlur}
+                  {...register("phone", { required: true })}
                 />
-                {touched.phone && errors.phone ? (
-                  <div className='text-red-500'>{errors.phone}</div>
-                ) : null}
+                {errors.name && <span className='text-xs text-red-500'>This field is required</span>}
               </div>
               <div className='w-full'>
                 <label htmlFor='services' className='px-4 py-1 axiformaRegular'>
                   Services
                 </label>
                 <select
-                  name='services'
                   id='services'
                   className='border border-[#D8D8D8] rounded-[5px] rounded-tl-[20px] rounded-br-[20px] px-5 py-2 outline-none w-full'
-                  value={values.services}
-                  onChange={handleChange}
-                  onBlur={handleBlur}
+                  {...register("services", { required: true })}
                 >
                   <option value="services">Services</option>
                   <option value='Chiropractor Treatment'>Chiropractor Treatment</option>
@@ -108,39 +126,18 @@ function Main() {
                   <option value="Neuro Physiotherapy Rehab">Neuro Physiotherapy Rehab</option>
                   <option value="Pre And Post Surgery Rehabilitation">Pre And Post Surgery Rehabilitation</option>
                 </select>
-                {touched.services && errors.services ? (
-                  <div className='text-red-500'>{errors.services}</div>
-                ) : null}
-              </div>
-              <div className='w-full'>
-                <label className='px-4 py-1 axiformaRegular'>Time</label>
-                <input
-                  type='time'
-                  name='time'
-                  id='time'
-                  placeholder='Select Times'
-                  className='border border-[#D8D8D8] rounded-[5px] rounded-tl-[20px] rounded-br-[20px] outline-none px-5 py-2 w-full'
-                  value={values.time}
-                  onChange={handleChange}
-                  onBlur={handleBlur}
-                />
-                {touched.time && errors.time ? (
-                  <div className='text-red-500'>{errors.time}</div>
-                ) : null}
+                {errors.services && <span className='text-xs text-red-500'>This field is required</span>}
               </div>
               <div className='w-full md:col-span-2'>
                 <label htmlFor='message' className='px-4 py-1 axiformaRegular'>
                   Message
                 </label>
                 <textarea
-                  name='message'
                   id='message'
                   placeholder='Type Your Message'
                   rows={4}
                   className='border border-[#D8D8D8] rounded-[5px] rounded-tl-[20px] rounded-br-[20px] px-5 py-3 outline-none lg:w-full w-full'
-                  value={values.message}
-                  onChange={handleChange}
-                ></textarea>
+                  {...register("massage", { required: true })}></textarea>
               </div>
               <div className='px-6 w-full md:col-span-2'>
                 <button
