@@ -3,58 +3,25 @@ import { BsFillTelephoneFill } from 'react-icons/bs'
 import { FaLocationArrow } from 'react-icons/fa'
 import { GrMail } from 'react-icons/gr'
 import Link from 'next/link';
+import { useFormik } from "formik";
+import { contactform } from '@/schemas/contactform';
 
+const initialValues = {
+  name: '',
+  phone: '',
+  services: '',
+  time: '',
+  message: '',
+}
 function main() {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    services: '',
-    time: '',
-    message: '',
-  });
-
-  const [formErrors, setFormErrors] = useState({
-    name: '',
-    phone: '',
-    services: '',
-    time: '',
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Add your validation logic here
-    const errors: { [key: string]: string } = {};
-
-    if (formData.name.trim() === '') {
-      errors.name = 'Name is required';
+  const { values, errors, touched, handleBlur, handleChange, handleSubmit } = useFormik({
+    initialValues,
+    validationSchema: contactform,
+    onSubmit: (values: any) => {
+      // console.log(values)
+      alert("message send successfully")
     }
-
-    if (formData.phone.trim() === '') {
-      errors.phone = 'Phone number is required';
-    }
-    if (formData.phone.trim() === '') {
-      errors.services = 'Select a service';
-    }
-    if (formData.phone.trim() === '') {
-      errors.time = 'Select appointment time';
-    }
-
-    if (Object.keys(errors).length > 0) {
-      // setFormErrors(errors);
-    } else {
-      // Submit the form or perform any other actions
-      console.log('Form submitted:', formData);
-    }
-  };
+  })
   return (
     <div className='bg-[#F3F9FD] w-full h-auto py-14'>
       <div className='container mx-auto px-4'>
@@ -95,11 +62,13 @@ function main() {
                   id='name'
                   placeholder='Your Name'
                   className='border border-[#D8D8D8] rounded-[5px] rounded-tl-[20px] rounded-br-[20px] px-5 py-2 outline-none w-full'
-                  value={formData.name}
+                  value={values.name}
                   onChange={handleChange}
-                  required
+                  onBlur={handleBlur}
                 />
-                <span className='text-red-500'>{formErrors.name}</span>
+                {touched.name && errors.name ? (
+                  <div className='text-red-500'>{errors.name}</div>
+                ) : null}
               </div>
               <div className='w-full'>
                 <label htmlFor='phone' className='px-4 py-1 axiformaRegular'>
@@ -111,11 +80,13 @@ function main() {
                   id='phone'
                   placeholder='Your Phone'
                   className='border border-[#D8D8D8] rounded-[5px] rounded-tl-[20px] rounded-br-[20px] px-5 py-2 outline-none w-full'
-                  value={formData.phone}
+                  value={values.phone}
                   onChange={handleChange}
-                  required
+                  onBlur={handleBlur}
                 />
-                <span className='text-red-500'>{formErrors.phone}</span>
+                {touched.phone && errors.phone ? (
+                  <div className='text-red-500'>{errors.phone}</div>
+                ) : null}
               </div>
               <div className='w-full'>
                 <label htmlFor='services' className='px-4 py-1 axiformaRegular'>
@@ -125,17 +96,20 @@ function main() {
                   name='services'
                   id='services'
                   className='border border-[#D8D8D8] rounded-[5px] rounded-tl-[20px] rounded-br-[20px] px-5 py-2 outline-none w-full'
-                  value={formData.services}
+                  value={values.services}
                   onChange={handleChange}
-                  required
+                  onBlur={handleBlur}
                 >
+                  <option value="services">Services</option>
                   <option value='Chiropractor Treatment'>Chiropractor Treatment</option>
                   <option value="Sports Physiotherapy">Sports Physiotherapy</option>
                   <option value="Pediatric Physiotherapy">Pediatric Physiotherapy</option>
                   <option value="Neuro Physiotherapy Rehab">Neuro Physiotherapy Rehab</option>
                   <option value="Pre And Post Surgery Rehabilitation">Pre And Post Surgery Rehabilitation</option>
                 </select>
-                <span className='text-red-500'>{formErrors.services}</span>
+                {touched.services && errors.services ? (
+                  <div className='text-red-500'>{errors.services}</div>
+                ) : null}
               </div>
               <div className='w-full'>
                 <label className='px-4 py-1 axiformaRegular'>Time</label>
@@ -145,11 +119,13 @@ function main() {
                   id='time'
                   placeholder='Select Times'
                   className='border border-[#D8D8D8] rounded-[5px] rounded-tl-[20px] rounded-br-[20px] outline-none px-5 py-2 w-full'
-                  value={formData.time}
+                  value={values.time}
                   onChange={handleChange}
-                  required
+                  onBlur={handleBlur}
                 />
-                <span className='text-red-500'>{formErrors.time}</span>
+                {touched.time && errors.time ? (
+                  <div className='text-red-500'>{errors.time}</div>
+                ) : null}
               </div>
               <div className='w-full md:col-span-2'>
                 <label htmlFor='message' className='px-4 py-1 axiformaRegular'>
@@ -161,7 +137,7 @@ function main() {
                   placeholder='Type Your Message'
                   rows={4}
                   className='border border-[#D8D8D8] rounded-[5px] rounded-tl-[20px] rounded-br-[20px] px-5 py-3 outline-none lg:w-full w-full'
-                  value={formData.message}
+                  value={values.message}
                   onChange={handleChange}
                 ></textarea>
               </div>
