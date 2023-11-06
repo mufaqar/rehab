@@ -17,9 +17,10 @@ function Main() {
   const { values, errors, touched, handleBlur, handleChange, handleSubmit } = useFormik({
     initialValues,
     validationSchema: contactform,
-    onSubmit: (values: any) => {
-      // console.log(values)
-      alert("message send successfully")
+    onSubmit: (values: any, action) => {
+       console.log(values)
+     // alert("message send successfully");
+      action.resetForm();
     }
   })
   return (
