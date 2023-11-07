@@ -33,22 +33,17 @@ export async function POST(request) {
      }
 
      // step-3
-     try {
-          transporter.sendMail(mailData)
-          return new Response('Email sended!')
-     } catch (error) {
-          return new Response('Error', {error})
-     }
-     // transporter.sendMail(mailData, function (err, info) {
-     //      if (err) {
-     //           console.log(err)
-     //           return new Response('Error', {err})
-     //      }
-     //      else {
-     //           console.log(info)
-     //           return new Response('Email sended!', {info})
-     //      }
-     // })
+    
+     transporter.sendMail(mailData, function (err, info) {
+          if (err) {
+               console.log(err)
+               return new Response('Error', {err})
+          }
+          else {
+               console.log(info)
+               return new Response('Email sended!', {info})
+          }
+     })
 
-     // return new Response('Email sended!')
+     return new Response('Email sended!')
 }
