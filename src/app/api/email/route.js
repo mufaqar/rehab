@@ -34,7 +34,7 @@ export async function POST(request) {
 
      // step-3
     
-     await transporter.sendMail(mailData, function (err, info) {
+     transporter.sendMail(mailData, function (err, info) {
           if (err) {
                console.log(err)
                return new Response('Error', {err})
