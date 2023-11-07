@@ -22,11 +22,12 @@ function Main() {
     reset,
     formState: { errors },
   } = useForm<any>()
+
   const [sending, setSending] = useState(false)
 
   const onSubmit: SubmitHandler<any> = (data: any) => {
     setSending(true)
-    fetch('/api/contactform', {
+    fetch('/api/email', {
       method: 'POST',
       headers: {
         Accept: 'application/json, text/plain, */*',
@@ -34,7 +35,7 @@ function Main() {
       },
       body: JSON.stringify(data),
     }).then((res) => {
-      console.log('Response received');
+      console.log('Response received', res);
       if (res.status === 200) {
         console.log('Response succeeded!');
         alert('Message Successfully send.!');
