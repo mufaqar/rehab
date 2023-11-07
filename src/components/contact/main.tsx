@@ -94,7 +94,7 @@ function Main() {
                   id='email'
                   placeholder='Email'
                   className='border border-[#D8D8D8] rounded-[5px] rounded-tl-[20px] rounded-br-[20px] outline-none px-5 py-2 w-full'
-                  {...register("email", { required: true })}
+                  {...register("email")}
                 />
                 {errors.email && <span className='text-xs text-red-500'>This field is required</span>}
               </div>
