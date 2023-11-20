@@ -14,7 +14,7 @@ function testimonials() {
           <Image src="/images/svg.svg" alt="Rehab Fit" width={450} height={650} className='w-10' />
         </div>
         <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-5 gap-10'>
-          <div className='bg-white rounded-tr-[80px] rounded-bl-[80px] rounded-md py-10'>
+          <div className='bg-white rounded-tr-[80px] rounded-bl-[80px] rounded-md py-10 flex flex-col justify-between'>
             <div className='px-10'>
               <h2 className='text-2xl axiformaRegular text-[#0E9CD9] py-3'>Exceptional Services.</h2>
               <p className='text-sm axiformaRegular'>I must say that Dr. Darkhshan Nausheen is a combination of high technology and a very kind Religious personality. After joining his Rehab skill I had a click in my mind that now things will improve on my side. And it happened. My husband become better and one step ahead day by day. I saw whenever he's giving treatment he's also reciting the Quran. Thank you so much Doc for making Hamid, 's life better.</p>
@@ -27,8 +27,7 @@ function testimonials() {
               </div>
             </div>
           </div>
-
-          <div className='bg-white rounded-tr-[80px] rounded-bl-[80px] rounded-md py-10'>
+          <div className='bg-white rounded-tr-[80px] rounded-bl-[80px] rounded-md py-10 flex flex-col justify-between'>
             <div className='px-10'>
               <h2 className='text-2xl axiformaRegular text-[#0E9CD9] py-3'>Awesome Physiotherapist</h2>
               <p className='text-sm'>Dr. Darkhshan Nausheen Is An Awesome Physiotherapist. He Has Been Treating Me For Pain In My Lower Back. I Highly Recommend Him As A Physiotherapist. He Cares About His Clients And Wants To Help People. He Is Very Friendly And Knowledgeable.</p>
@@ -41,8 +40,7 @@ function testimonials() {
               </div>
             </div>
           </div>
-
-          <div className='bg-white rounded-tr-[80px] rounded-bl-[80px] rounded-md py-10'>
+          <div className='bg-white rounded-tr-[80px] rounded-bl-[80px] rounded-md py-10 flex flex-col justify-between'>
             <div className='px-10'>
               <h2 className='text-2xl axiformaRegular text-[#0E9CD9] py-3'>Highly recommend!</h2>
               <p className='text-sm axiformaRegular'>Excellent facility and staff. I have received Physiotherapy for my knee. The doctors are experts in the field and provide the best care possible. Highly recommend!</p>
