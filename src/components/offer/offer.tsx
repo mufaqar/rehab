@@ -3,26 +3,26 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const offerings = [
-  { id: 1, title: 'Chiropractor Treatment', img: "/images/services/1.png" },
-  { id: 2, title: 'Sports Physiotherapy', img: "/images/services/2.png" },
-  { id: 3, title: 'Pediatric Physiotherapy', img: "/images/services/3.png" },
-  { id: 4, title: 'Home Care Physiotherapy', img: "/images/services/4.png" },
-  { id: 5, title: 'Neuro Physiotherapy-Rehab', img: "/images/services/5.png" },
-  { id: 6, title: 'Pre And Post Surgery Rehabilitation', img: "/images/services/6.png" },
-  { id: 7, title: 'Geriatric Physiotherapy', img: "/images/services/7.png" },
-  { id: 8, title: 'Strength Training', img: "/images/services/8.png" },
-  { id: 9, title: 'Advanced Physiotherapy', img: "/images/services/9.png" },
-  { id: 10, title: "Women's Health Physiotherapy", img: "/images/services/10.png" },
-  { id: 11, title: 'Musculoskeltal Physiotherapy', img: "/images/services/11.png" },
-  { id: 12, title: 'Vestibular Rehabilitation (VR)', img: "/images/services/12.png" },
-  { id: 13, title: 'Workplace Ergonomics: Assesment & Training', img: "/images/services/13.png" },
-  { id: 14, title: 'Therepeutic Massage', img: "/images/services/1.png" },
-  { id: 15, title: 'Tele-Physiotherapy', img: "/images/services/2.png" },
-  { id: 16, title: 'Cardiac Rehabilitation', img: "/images/services/3.png" },
-  { id: 17, title: 'Clinical Physiotherapy', img: "/images/services/4.png" },
-  { id: 18, title: 'Physical Therapy', img: "/images/services/5.png" },
-  { id: 19, title: 'Spinal Injury Rehabilitation', img: "/images/services/6.png" },
-  { id: 20, title: 'Speech Therapy', img: "/images/services/7.png" },
+  { id: 1, title: 'Chiropractor Treatment', img: "/images/services/1.svg" },
+  { id: 2, title: 'Sports Physiotherapy', img: "/images/services/2.svg" },
+  { id: 3, title: 'Pediatric Physiotherapy', img: "/images/services/3.svg" },
+  { id: 4, title: 'Home Care Physiotherapy', img: "/images/services/4.svg" },
+  { id: 5, title: 'Neuro Physiotherapy-Rehab', img: "/images/services/5.svg" },
+  { id: 6, title: 'Pre And Post Surgery Rehabilitation', img: "/images/services/6.svg" },
+  { id: 7, title: 'Geriatric Physiotherapy', img: "/images/services/7.svg" },
+  { id: 8, title: 'Strength Training', img: "/images/services/8.svg" },
+  { id: 9, title: 'Advanced Physiotherapy', img: "/images/services/9.svg" },
+  { id: 10, title: "Women's Health Physiotherapy", img: "/images/services/10.svg" },
+  { id: 11, title: 'Musculoskeltal Physiotherapy', img: "/images/services/11.svg" },
+  { id: 12, title: 'Vestibular Rehabilitation (VR)', img: "/images/services/12.svg" },
+  { id: 13, title: 'Workplace Ergonomics: Assesment & Training', img: "/images/services/13.svg" },
+  { id: 14, title: 'Therepeutic Massage', img: "/images/services/1.svg" },
+  { id: 15, title: 'Tele-Physiotherapy', img: "/images/services/2.svg" },
+  { id: 16, title: 'Cardiac Rehabilitation', img: "/images/services/3.svg" },
+  { id: 17, title: 'Clinical Physiotherapy', img: "/images/services/4.svg" },
+  { id: 18, title: 'Physical Therapy', img: "/images/services/5.svg" },
+  { id: 19, title: 'Spinal Injury Rehabilitation', img: "/images/services/6.svg" },
+  { id: 20, title: 'Speech Therapy', img: "/images/services/7.svg" },
   // Add more items as needed
 ];
 
@@ -39,8 +39,8 @@ function Offer() {
         <div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-5 gap-4'>
           {offerings.map((item) => (
             <div key={item.id} className='border border-[#0E9CD9] text-center p-3 rounded-tl-[5px] rounded-tr-[20px] rounded-br-[5px] rounded-bl-[20px] flex items-center gap-3'>
-              <Image src={item.img} alt="icon" width={41} height={37} className='w-12 h-12 bg-[#0E9CD9] rounded-tr-[12px] rounded-bl-[12px] p-2' />
-              <Link href="#" className="font-semibold axiformaRegular">{item.title}</Link>
+              <Image src={item.img} alt="icon" width={48} height={48} className='w-12 h-12 bg-[#0E9CD9] rounded-tr-[12px] rounded-bl-[12px] p-2' />
+              <Link href="#" className="text-sm font-semibold axiformaRegular inline-flex text-start">{item.title}</Link>
             </div>
           ))}
         </div>
