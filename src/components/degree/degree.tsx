@@ -6,10 +6,10 @@ function Degree() {
   return (
     <div className='container mx-auto px-4 mt-20'>
       <div className='text-center mb-10'>
-        <h2 className='text-3xl md:text-5xl lg:text-7xl text-[#363853] font-semibold axiformaRegular mb-4 md:mb-6'>
+        <h2 className='text-3xl md:text-5xl text-[#363853] font-semibold axiformaRegular mb-4 md:mb-6'>
           360 Degree Physio Care
         </h2>
-        <p className='text-lg md:text-xl lg:text-2xl text-[#363853] axiformaRegular mx-auto md:w-[80%] xl:w-[90%] mb-6'>
+        <p className='text-lg md:text-xl text-[#363853] axiformaRegular mx-auto md:w-[80%] xl:w-[90%] mb-6'>
           We Are Committed To Ensuring That Our Clients Have Easy Access To Our Physiotherapy Services, Whether It's At Any Of Our Clinics Or Through Scheduling A Convenient Home Visit.
         </p>
       </div>

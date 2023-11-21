@@ -20,7 +20,7 @@ function Videos() {
         <div className='bg-[#0B577E] h-auto text-white py-14 mt-20'>
             <div className='container mx-auto px-4'>
                 <div className=' text-center'>
-                    <h2 className='lg:text-[72px] md:text-[60px] text-[30px] font-semibold axiformaRegular'>
+                    <h2 className='text-3xl md:text-5xl font-semibold axiformaRegular'>
                         Daily Routine Therapy
                     </h2>
                 </div>

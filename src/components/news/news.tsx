@@ -5,10 +5,10 @@ function news() {
   return (
     <div className='container mx-auto px-4 py-14'>
       <div className='text-center mb-10'>
-        <h2 className='text-3xl md:text-5xl lg:text-7xl text-[#363853] font-semibold axiformaRegular mb-4 md:mb-6'>
+        <h2 className='text-3xl md:text-5xl text-[#363853] font-semibold axiformaRegular mb-4 md:mb-6'>
           News & Upcoming Events
         </h2>
-        <p className='text-lg md:text-xl lg:text-2xl text-[#363853] axiformaRegular mx-auto md:w-[80%] xl:w-[90%] mb-6'>
+        <p className='text-lg md:text-xl text-[#363853] axiformaRegular mx-auto md:w-[80%] xl:w-[90%] mb-6'>
           Latest Happenings & hot topics in the field of physiotherapy along with updates from CB Physiotherapy
         </p>
       </div>

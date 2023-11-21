@@ -31,8 +31,8 @@ function Offer() {
     <div className='bg-[#0B577E] h-auto text-white py-14 mt-20'>
       <div className='container mx-auto px-4'>
         <div className=' text-center'>
-          <h2 className='lg:text-[72px] md:text-[60px] text-[30px] font-semibold axiformaRegular'>What We Offer</h2>
-          <p className='text-lg lg:text-xl xl:text-2xl axiformaRegular lg:w-[70%] xl:w-[90%] mx-auto'>
+          <h2 className='text-3xl md:text-5xl font-semibold axiformaRegular'>What We Offer</h2>
+          <p className='text-lg md:text-xl axiformaRegular lg:w-[70%] xl:w-[90%] mx-auto'>
             We Offer Physiotherapy Treatments Across Neuro/ Ortho/ Chiro/ Pediatrics/ Geriatrics/ Sports Related Issues Covering A Wide Range Of Conditions and symptoms
           </p>
         </div>

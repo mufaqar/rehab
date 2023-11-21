@@ -6,7 +6,7 @@ function testimonials() {
     <div className='bg-[#0B577E] h-auto'>
       <div className='container mx-auto px-4 py-20 mt-14'>
         <div>
-          <h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl  text-center font-semibold text-white axiformaRegular'>
+          <h2 className='text-3xl md:text-5xl text-center font-semibold text-white axiformaRegular'>
             Service Testimonials
           </h2>
         </div>
@@ -22,7 +22,7 @@ function testimonials() {
             <div className='flex px-12 py-4 gap-5 items-center'>
               <Image src="/images/testimonial1.png" alt="Rehab Fit" width={450} height={650} className='w-10 h-10 rounded-full' />
               <div>
-                <h4 className='text-[#0E9CD9] axiformaRegular'>Muhammad sara</h4>
+                <h4 className='text-[#0E9CD9] axiformaRegular'>Muhammad Hammad </h4>
                 <span>02-02-2023</span>
               </div>
             </div>
@@ -35,8 +35,8 @@ function testimonials() {
             <div className='flex px-12 py-4 gap-5 items-center mt-20'>
               <Image src="/images/testimonial2.png" alt="Rehab Fit" width={450} height={650} className='w-10 h-10 rounded-full' />
               <div>
-                <h4 className='text-[#0E9CD9] axiformaRegular'>Muhammad sara</h4>
-                <span>02-02-2023</span>
+                <h4 className='text-[#0E9CD9] axiformaRegular'>Ruchika Thakkar </h4>
+                <span>10-03-2022</span>
               </div>
             </div>
           </div>
@@ -48,7 +48,7 @@ function testimonials() {
             <div className='flex px-12 py-4 gap-5 items-center mt-[18vh]'>
               <Image src="/images/testimonial1.png" alt="Rehab Fit" width={450} height={650} className='w-10 h-10 rounded-full' />
               <div>
-                <h4 className='text-[#0E9CD9] axiformaRegular'>Muhammad sara</h4>
+                <h4 className='text-[#0E9CD9] axiformaRegular'>Muhammad Hammad </h4>
                 <span>02-02-2023</span>
               </div>
             </div>
