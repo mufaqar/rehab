@@ -23,7 +23,7 @@ function Navbar() {
           <Link href="/" className="font-semibold text-lg axiformaRegular hover:text-[#0E9CD9]">Home</Link>
           <Link href="/about" className="font-semibold text-lg axiformaRegular hover:text-[#0E9CD9]">About Us</Link>
           <Link href="/services" className="font-semibold text-lg axiformaRegular hover:text-[#0E9CD9]">Our Offerings</Link>
-          <Link href="#" className="text-[#0B577E] hover:text-[#0E9CD9] font-semibold AxiformaMedium flex items-center gap-1.5 hover:opacity-60">
+          <Link href="https://api.whatsapp.com/send?phone=923203588468&text=Physiotherapy%20Clinic%20Innovation,%20Integration,%20Accessibility" target='_blank' className="text-[#0B577E] hover:text-[#0E9CD9] font-semibold AxiformaMedium flex items-center gap-1.5 hover:opacity-60">
             <Image src="/images/whatapp.svg" alt="Rehab Fit" width={40} height={40} className='' />
             +92 320 3588468
           </Link>
