@@ -3,7 +3,21 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { BsArrowRight } from 'react-icons/bs';
 import { AiFillPlayCircle } from 'react-icons/ai';
+import YouTube, { YouTubeProps } from "react-youtube";
+
 function innovation() {
+
+  const onPlayerReady: YouTubeProps['onReady'] = (event) => {
+    event.target.pauseVideo();
+  }
+  const opts: YouTubeProps['opts'] = {
+    height: '100%',
+    width: "100%",
+    playerVars: {
+      autoplay: 0,
+    },
+  };
+
   return (
     <div className='container mx-auto px-4'>
       <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-5 items-center lg:mt-20 mt-10'>
@@ -18,10 +32,16 @@ function innovation() {
           </div>
         </div>
         <div className=''>
-          <Link href="/" className='relative'>
+          <YouTube
+            videoId="IPnAuU6EL7M"
+            opts={opts}
+            className={`videocontainer aspect-video`}
+            iframeClassName={`responsive-iframe rounded-tl-[80px] rounded-tr-[10px] rounded-br-[80px] rounded-bl-[10px]`}
+            onReady={onPlayerReady} />
+          {/* <Link href="/" className='relative'>
             <Image src="/images/inovation1.png" alt="Rehab Fit" width={602} height={496} className='md:ml-auto' />
             <Image src="/images/video/play.svg" alt="Rehab Fit" width={100} height={100} className='absolute inset-y-1/2 inset-x-1/2 -translate-x-1/2 rounded-full lg:w-[181px] lg:h-[177px]' />
-          </Link>
+          </Link> */}
           <Link href="/">
             <Image src="/images/inovation2.png" alt="Rehab Fit" width={630} height={204} className=' mt-4 md:ml-auto' />
           </Link>
